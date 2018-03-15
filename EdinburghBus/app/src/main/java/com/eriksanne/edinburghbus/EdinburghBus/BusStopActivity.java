@@ -29,6 +29,8 @@ public class BusStopActivity extends AppCompatActivity implements OnMapReadyCall
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bus_stop);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         // Get the SupportMapFragment and request notification
         // when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -54,8 +56,7 @@ public class BusStopActivity extends AppCompatActivity implements OnMapReadyCall
         double longitude = Double.parseDouble(latlong[1]);
         stopPosition = new LatLng(latitude, longitude);
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+        }
 
 
     @Override

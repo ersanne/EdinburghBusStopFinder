@@ -355,7 +355,7 @@ public class MainActivity extends AppCompatActivity {
 
             } catch (JSONException e) {}
 
-            Toast.makeText(getApplicationContext(), "DB update complete...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "DB update complete", Toast.LENGTH_SHORT).show();
             spinner.setVisibility(View.GONE);
             content.setVisibility(View.VISIBLE);
 
